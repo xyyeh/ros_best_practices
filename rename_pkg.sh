@@ -52,6 +52,11 @@ sed -i 's/ros_package_template/'$1'/g' test_algorithm.cpp
 sed -i 's/ros_package_template/'$1'/g' test_ros_package_template.cpp
 mv test_ros_package_template.cpp test_$1.cpp
 
-echo Renaming directory
+echo Renaming directories
 cd $curr_dir
 mv ros_package_template $1
+
+echo Renaming repository name
+cd $curr_dir
+cd ..
+mv ROS_BEST_PRACTICES ${1^^}
