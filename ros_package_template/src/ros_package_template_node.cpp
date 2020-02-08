@@ -1,5 +1,5 @@
 #include <ros/ros.h>
-#include "ros_package_template/RosPackageTemplate.hpp"
+#include "ros_package_template/ros_package_template.hpp"
 
 int main(int argc, char** argv)
 {

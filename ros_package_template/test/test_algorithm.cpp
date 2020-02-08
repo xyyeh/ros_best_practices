@@ -1,4 +1,4 @@
-#include "ros_package_template/Algorithm.hpp"
+#include "ros_package_template/algorithm.hpp"
 
 // gtest
 #include <gtest/gtest.h>
