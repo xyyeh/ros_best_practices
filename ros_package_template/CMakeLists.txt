@@ -55,13 +55,13 @@ include_directories(
 
 ## Declare a cpp library
 add_library(${PROJECT_NAME}_core
-   src/Algorithm.cpp
+   src/algorithm.cpp
 )
 
 ## Declare cpp executables
 add_executable(${PROJECT_NAME}
   src/${PROJECT_NAME}_node.cpp
-  src/RosPackageTemplate.cpp
+  src/ros_package_template.cpp
 )
 
 ## Add dependencies to exported targets, like ROS msgs or srvs
@@ -117,7 +117,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 ## Add gtest based cpp test target and link libraries
 catkin_add_gtest(${PROJECT_NAME}-test
   test/test_ros_package_template.cpp
-  test/AlgorithmTest.cpp)
+  test/test_algorithm.cpp)
 endif()
 
 if(TARGET ${PROJECT_NAME}-test)
